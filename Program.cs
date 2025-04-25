@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System;
+using System.Diagnostics.Metrics;
+using System.Net.Mime;
 
 namespace Task_division_On_Team
 {
@@ -8,6 +10,7 @@ namespace Task_division_On_Team
         
         private static List<string> Tasks;
         private static List<string> User;
+       static  int Counter = 1;
         static void Main(string[] args)
         {
             Load();
@@ -80,19 +83,43 @@ namespace Task_division_On_Team
                 Console.WriteLine($"Task Name: {item}");
             }
         }
+
+        static int GetRandomDigit(int length)
+        {
+            int digit = 0;
+            for (int i = 0; i < new Random().Next(7); i++)
+            {
+                digit = new Random().Next(length);
+            }
+
+            return digit;
+        }
+
+        static void ExportToFile(string text)
+        {
+            // مسیر فایل مورد نظر
+            string filePath = "../../../log.txt";
+
+            // استفاده از using برای مدیریت منابع
+            File.AppendAllText(filePath, text+"\n");
+        }
         static void Task_division()
         {
             Console.Clear();
+            int i = 1;
+
+            ExportToFile($"{DateTime.Now}------------------------------------");
+            ExportToFile($"-------------{Counter}-------------------");
             while (User.Count > 0 || Tasks.Count > 0)
             {
                 // Select a random user if the list is not empty
                 string userName = User.Count > 0
-                    ? User[new Random().Next(User.Count)]
+                    ? User[GetRandomDigit(User.Count)]
                     : "No User Left";
 
                 // Select a random task if the list is not empty
                 string taskName = Tasks.Count > 0
-                ? Tasks[new Random().Next(Tasks.Count)]
+                ? Tasks[GetRandomDigit(Tasks.Count)]
                     : "No Task Left";
 
                 // Remove the selected user and task from their respective lists
@@ -100,11 +127,16 @@ namespace Task_division_On_Team
                 if (Tasks.Count > 0) Tasks.Remove(taskName);
 
                 // Display the result
-                ConsoleDesign.ShowMessage($"Task: {taskName} \t Name: {userName}");
+                var Resualt=$"{i}- Task: {taskName} \t Name: {userName}";
+                ConsoleDesign.ShowMessage(Resualt);
+                ExportToFile(Resualt);
+       
                 ConsoleDesign.ShowMessage("Press Enter for Next...",ConsoleColor.DarkYellow);
-   
+                i++;
             }
-
+            ExportToFile($"{DateTime.Now}------------------------------------");
+            Counter++;
+            Load();
         }
     }
 }

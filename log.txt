@@ -1,0 +1,70 @@
+4/25/2025 6:14:32 PM------------------------------------
+-------------1-------------------
+1- Task: Task1 	 Name: mehdi
+2- Task: Task2 	 Name: faraji
+3- Task: Task4 	 Name: soheil
+4- Task: Task7 	 Name: abolfazl
+5- Task: Task3 	 Name: salamat
+6- Task: Task5 	 Name: tiam
+7- Task: Task6 	 Name: amirhosein
+4/25/2025 6:14:32 PM------------------------------------
+4/25/2025 6:14:38 PM------------------------------------
+-------------2-------------------
+1- Task: Task4 	 Name: abolfazl
+2- Task: Task5 	 Name: faraji
+3- Task: Task3 	 Name: tiam
+4- Task: Task6 	 Name: mehdi
+5- Task: Task2 	 Name: soheil
+6- Task: Task1 	 Name: amirhosein
+7- Task: Task7 	 Name: salamat
+4/25/2025 6:14:38 PM------------------------------------
+4/25/2025 6:14:40 PM------------------------------------
+-------------3-------------------
+1- Task: Task1 	 Name: mehdi
+2- Task: Task2 	 Name: tiam
+3- Task: Task5 	 Name: amirhosein
+4- Task: Task7 	 Name: soheil
+5- Task: Task6 	 Name: salamat
+6- Task: Task3 	 Name: abolfazl
+7- Task: Task4 	 Name: faraji
+4/25/2025 6:14:40 PM------------------------------------
+4/25/2025 6:14:41 PM------------------------------------
+-------------4-------------------
+1- Task: Task1 	 Name: salamat
+2- Task: Task6 	 Name: soheil
+3- Task: Task2 	 Name: amirhosein
+4- Task: Task3 	 Name: abolfazl
+5- Task: Task5 	 Name: faraji
+6- Task: Task4 	 Name: tiam
+7- Task: Task7 	 Name: mehdi
+4/25/2025 6:14:41 PM------------------------------------
+4/25/2025 6:14:42 PM------------------------------------
+-------------5-------------------
+1- Task: Task4 	 Name: soheil
+2- Task: Task5 	 Name: salamat
+3- Task: Task7 	 Name: abolfazl
+4- Task: Task1 	 Name: mehdi
+5- Task: Task6 	 Name: tiam
+6- Task: Task2 	 Name: faraji
+7- Task: Task3 	 Name: amirhosein
+4/25/2025 6:14:42 PM------------------------------------
+4/25/2025 6:14:43 PM------------------------------------
+-------------6-------------------
+1- Task: Task2 	 Name: mehdi
+2- Task: Task4 	 Name: abolfazl
+3- Task: Task7 	 Name: tiam
+4- Task: Task6 	 Name: salamat
+5- Task: Task5 	 Name: faraji
+6- Task: Task1 	 Name: amirhosein
+7- Task: Task3 	 Name: soheil
+4/25/2025 6:14:43 PM------------------------------------
+4/25/2025 6:14:44 PM------------------------------------
+-------------7-------------------
+1- Task: Task2 	 Name: soheil
+2- Task: Task7 	 Name: tiam
+3- Task: Task5 	 Name: abolfazl
+4- Task: Task1 	 Name: mehdi
+5- Task: Task6 	 Name: amirhosein
+6- Task: Task3 	 Name: salamat
+7- Task: Task4 	 Name: faraji
+4/25/2025 6:14:44 PM------------------------------------
