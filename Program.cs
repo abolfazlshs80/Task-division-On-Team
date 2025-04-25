@@ -5,6 +5,7 @@ namespace Task_division_On_Team
 {
     internal class Program
     {
+        
         private static List<string> Tasks;
         private static List<string> User;
         static void Main(string[] args)
@@ -81,6 +82,7 @@ namespace Task_division_On_Team
         }
         static void Task_division()
         {
+            Console.Clear();
             while (User.Count > 0 || Tasks.Count > 0)
             {
                 // Select a random user if the list is not empty
@@ -98,9 +100,9 @@ namespace Task_division_On_Team
                 if (Tasks.Count > 0) Tasks.Remove(taskName);
 
                 // Display the result
-                Console.WriteLine($"Task: {taskName} \t Name: {userName}");
-                Console.WriteLine("Press Enter for Next...");
-                Console.ReadLine();
+                ConsoleDesign.ShowMessage($"Task: {taskName} \t Name: {userName}");
+                ConsoleDesign.ShowMessage("Press Enter for Next...",ConsoleColor.DarkYellow);
+   
             }
 
         }
