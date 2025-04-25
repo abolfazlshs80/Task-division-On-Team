@@ -1,4 +1,7 @@
-﻿namespace Task_division_On_Team
+﻿using System.Threading.Tasks;
+using System;
+
+namespace Task_division_On_Team
 {
     internal class Program
     {
@@ -78,16 +81,28 @@
         }
         static void Task_division()
         {
-            while (User.Count!=0||Tasks.Count!=0)
+            while (User.Count > 0 || Tasks.Count > 0)
             {
-                string UserName = User[new Random().Next(User.Count==1?0:1, User.Count)];
-                string TaskName = Tasks[new Random().Next(Tasks.Count == 1 ? 0 : 1, Tasks.Count)];
-                User.Remove(UserName);
-                Tasks.Remove(TaskName);
-                Console.WriteLine($"Task : {TaskName} \t Name : {UserName}");
-                Console.WriteLine("Enter For Next");
+                // Select a random user if the list is not empty
+                string userName = User.Count > 0
+                    ? User[new Random().Next(User.Count)]
+                    : "No User Left";
+
+                // Select a random task if the list is not empty
+                string taskName = Tasks.Count > 0
+                ? Tasks[new Random().Next(Tasks.Count)]
+                    : "No Task Left";
+
+                // Remove the selected user and task from their respective lists
+                if (User.Count > 0) User.Remove(userName);
+                if (Tasks.Count > 0) Tasks.Remove(taskName);
+
+                // Display the result
+                Console.WriteLine($"Task: {taskName} \t Name: {userName}");
+                Console.WriteLine("Press Enter for Next...");
                 Console.ReadLine();
             }
+
         }
     }
 }
